@@ -1,0 +1,193 @@
+/* src/pages/ToursList.css */
+
+.tours_list {
+  min-height: 100vh;
+  width: 100%;
+  padding: 24px 25px; /* ✅ 15px left/right */
+  background: transparent;
+}
+
+.toursWrap {
+  margin: 0 auto;
+}
+
+.toursHeader {
+  margin-bottom: 14px;
+}
+
+.toursTitle {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: #111;
+}
+
+.toursSub {
+  margin-top: 6px;
+  color: #666;
+  font-size: 14px;
+}
+
+.toursInfo {
+  padding: 14px;
+  color: #444;
+}
+
+.toursError {
+  padding: 14px;
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  background: rgba(255, 0, 0, 0.06);
+  color: #b00020;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* ✅ flex: first touches left, last touches right */
+.toursGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+/* ✅ Desktop: 4 per row (3 gaps) */
+.tourCard {
+  display: block;
+  width: calc((100% - 14px * 3) / 4);
+  max-width: calc((100% - 14px * 3) / 4);
+
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #f7f7f7;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+  color: inherit;
+}
+
+.tourCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.16);
+}
+
+.tourImgWrap {
+  width: 100%;
+  height: 190px;
+  background: #eaeaea;
+}
+
+.tourImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ✅ crop */
+  object-position: center;
+  display: block;
+}
+
+.tourImgPlaceholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.tourBody {
+  padding: 12px 12px 14px;
+}
+
+.tourName {
+  font-size: 16px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.25;
+}
+
+.tourMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tourChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.06);
+  color: #222;
+}
+
+.chip2 {
+  background: rgba(0, 0, 0, 0.09);
+}
+
+.chip.muted {
+  opacity: 0.6;
+}
+
+.tourExcerpt {
+  margin-top: 10px;
+  color: #444;
+  font-size: 13px;
+  line-height: 1.45;
+  min-height: 38px;
+}
+
+/* ✅ not centered */
+.tourMeta,
+.tourChips {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* =========================
+   ✅ RESPONSIVE
+   ========================= */
+
+/* ✅ Small desktop / laptop: 3 per row */
+@media (max-width: 1280px) {
+  .tourCard {
+    width: calc((100% - 14px * 2) / 3);
+    max-width: calc((100% - 14px * 2) / 3);
+  }
+}
+
+/* ✅ Tablet: 2 per row */
+@media (max-width: 980px) {
+  .tourCard {
+    width: calc((100% - 14px) / 2);
+    max-width: calc((100% - 14px) / 2);
+  }
+}
+
+/* ✅ Mobile: 1 per row */
+@media (max-width: 640px) {
+  .tours_list {
+    padding: 18px 15px;
+  }
+
+  .tourCard {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tourImgWrap {
+    height: 220px;
+  }
+}

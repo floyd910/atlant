@@ -1,0 +1,151 @@
+.adminPage {
+  min-height: 100vh;
+  background: #222b3f;
+}
+
+.adminCard {
+  width: 90%;
+  max-width: 420px;
+  background: #20304d46;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 22px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.adminHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.adminLogo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.adminTitle {
+  margin: 0;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.adminForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.adminLabel {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 17px;
+  margin-top: 6px;
+}
+
+.adminInput {
+  width: 100%;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(154, 142, 142, 0.205);
+  background: #344773;
+  color: #fff;
+  padding: 0 12px;
+  outline: none;
+}
+
+.adminInput:focus {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.adminBtn {
+  margin-top: 10px;
+  height: 44px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #2b7cff;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.adminBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.adminBtnGhost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.adminMsg {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+}
+
+.adminHint {
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+}
+
+.adminHint span {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.adminTopbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  background: #121212;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminTopbarLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.adminTopbarLogo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.adminTopbarTitle {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.adminTopbarLogout {
+  border: 0;
+  background: rgba(255, 90, 90, 0.22);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.adminTopbarLogout:hover {
+  background: rgba(255, 90, 90, 0.32);
+}

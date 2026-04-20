@@ -1,0 +1,15 @@
+.slogan h2 {
+  color: black;
+  font-size: 32px;
+  text-align: center;
+}
+
+.content {
+  padding: 0 55px 55px;
+}
+
+@media (max-width: 500px) {
+  .content {
+    padding: 0 10px 30px;
+  }
+}

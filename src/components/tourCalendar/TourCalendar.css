@@ -1,0 +1,196 @@
+.upcoming {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-width: 320px;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.upcoming h3 {
+  text-align: center;
+  background-color: #555;
+  font-size: 30px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 10px 25px;
+  color: #f55d2f;
+}
+
+.handmade-calendar {
+  /* border: 1px solid #ccc; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: beige;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 2.5em;
+  color: #777;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-grid {
+  font-size: 1.2em;
+}
+
+.day-name {
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+.day {
+  text-align: center;
+  padding: 5px;
+  height: 50px !important;
+  border: 1px solid grey;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.day:hover,
+.active_day {
+  background-color: #555;
+  cursor: pointer;
+  color: white;
+}
+
+.tour-day {
+  background-color: #555;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.standart_day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tour-day:hover {
+  /* background-color: #bae7ff; */
+}
+
+.tour-day .tour-title {
+  display: block;
+  font-size: 1em !important;
+  color: #f55d2f !important;
+  text-align: center;
+}
+
+.tour-day span {
+  font-size: 0.7em;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.day span {
+  display: block;
+}
+
+/* .day .tour-title {
+  font-size: 0.8em;
+  color: #555;
+} */
+
+.tour-day span:first-child {
+  font-weight: normal; /* Day number in tour day */
+}
+
+.tour-day span.tour-title {
+  font-weight: bold;
+}
+
+.empty-day {
+  /* Style for the empty cells before the first day of the month */
+}
+
+/* TourCalendar.css */
+
+.selected-date-info {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+  width: 100%;
+}
+
+.selected-date-info h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.selected-date-info p {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.selected-date-info button {
+  background-color: #444;
+  color: #f55d2f;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;
+  margin: 5px 0;
+  border: 2px solid #444;
+}
+
+.selected-date-info button:hover {
+  background-color: transparent;
+  border: 2px solid #444;
+  color: #444;
+}
+
+.selected-date-info button:last-child {
+  background-color: #f55d2f;
+  color: black;
+  font-size: 1em;
+  border: 2px solid #f55d2f;
+  border: 2px solid #444;
+}
+
+.selected-date-info button:last-child:hover {
+  background-color: transparent;
+  border: 2px solid #f55d2f;
+  color: #f55d2f;
+}

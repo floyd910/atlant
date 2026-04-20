@@ -1,0 +1,92 @@
+#root {
+  /* max-width: 1280px; */
+  text-align: center;
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #fffbf2;
+}
+
+.page {
+  margin: auto;
+  padding: 30px 55px;
+  position: relative;
+  min-height: calc(100vh - 250px);
+}
+
+.page_title {
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  color: black;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #f3f3f3;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.page img {
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: 1px solid transparent;
+}
+
+.page_title {
+  font-size: 24px;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  gaP: 20px;
+}
+
+.construction{
+  padding: 55px;
+}
+
+.construction h1{
+  font-family: "DM Serif Display", serif;
+}

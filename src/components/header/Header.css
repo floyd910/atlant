@@ -1,0 +1,298 @@
+/* ===== HEADER LAYOUT ===== */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 55px;
+  padding-left: 20px;
+  color: black;
+  background: var(--orange);
+}
+
+.home_page_header {
+  position: absolute !important;
+  top: 0px !important;
+  left: 0;
+  z-index: 888;
+  background: transparent !important;
+  padding-left: 25px;
+  color: white;
+}
+
+.home_page_header .burger_btn {
+  color: white;
+}
+
+.header {
+  width: 100%;
+  top: 15px;
+  left: 0;
+  z-index: 1;
+}
+
+.about_us li {
+  font-size: 17px;
+}
+
+.brand_logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: white;
+  width: 38px;
+}
+
+.brand_logo img {
+  width: 100%;
+}
+
+/* ===== BRAND TITLE ===== */
+
+header h1 {
+  font-size: 20px;
+  font-family: "DM Serif Display", serif;
+  color: black;
+  margin: 0;
+}
+
+.home_page_header h1,
+.home_page_header h2,
+.home_page_header button {
+  color: white;
+}
+
+.burger_btn {
+  display: none;
+  color: black;
+}
+
+/* ========================================================= */
+/* ================= MENU NORMALIZATION ==================== */
+/* ========================================================= */
+
+.desktop_menu {
+  --menu-color: #f3f3f3;
+  --menu-size: 17px;
+  --menu-weight: 700;
+  --menu-line: 1.2;
+  --menu-letter: 0.3px;
+
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Remove heading defaults inside nav */
+.desktop_menu h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+/* Apply SAME typography everywhere */
+.desktop_menu a,
+.desktop_menu button,
+.desktop_menu .dd_trigger,
+.desktop_menu .nav_link,
+.desktop_menu .link,
+.desktop_menu .contact_btn,
+.desktop_menu a h2,
+.desktop_menu button h2,
+.desktop_menu .dd button,
+.desktop_menu .dd button h2,
+.desktop_menu .contact_btn h2 {
+  font-size: var(--menu-size) !important;
+  font-weight: var(--menu-weight) !important;
+  line-height: var(--menu-line) !important;
+  letter-spacing: var(--menu-letter) !important;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+/* Remove native button inconsistencies */
+.desktop_menu button,
+.desktop_menu .dd_trigger,
+.desktop_menu .contact_btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ===== Dropdown ===== */
+
+.dd {
+  position: relative;
+}
+
+.dd_chev {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.dd_trigger.active .dd_chev {
+  transform: rotate(180deg);
+}
+
+.dd_menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: -5px;
+  min-width: 180px;
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      color-mix(in srgb, var(--orange-text) 25%, white) 0%,
+      transparent 65%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      color-mix(in srgb, var(--orange-text) 40%, white) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 65% 80%,
+      color-mix(in srgb, var(--orange-text) 35%, white) 0%,
+      transparent 60%
+    ),
+    #ffffff;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 888 !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+}
+
+.dd_item {
+  display: block;
+  padding: 12px 14px;
+  color: #444 !important;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1px solid #333;
+}
+
+.dd_item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Contact Button (same typography, optional highlight) ===== */
+
+.contact_btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(245, 93, 47, 0.1);
+}
+
+/* ===== Modal ===== */
+
+.modal_overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal {
+  width: min(520px, 100%);
+  background-color: #363535;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  position: relative;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.modal_close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal_close:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.modal_title {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.modal_body p {
+  margin: 0;
+  color: black;
+}
+
+.modal_body {
+  margin-top: 15px;
+  font-size: 20px;
+  color: black;
+}
+
+.modal button {
+  font-size: 22px;
+  color: var(--orange);
+}
+
+.modal_body .flex {
+  gap: 5px;
+}
+
+.drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* dark overlay */
+  z-index: 9999;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0; /* change to left: 0 if you want left drawer */
+  height: 100vh;
+  width: 320px;
+  background: #111; /* dark drawer */
+  color: white;
+  z-index: 10000; /* higher than overlay */
+  padding: 20px;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 999px) {
+  .desktop_menu {
+    display: none;
+  }
+
+  .header {
+    padding: 15px 25px;
+  }
+
+  .burger_btn {
+    display: block;
+  }
+}

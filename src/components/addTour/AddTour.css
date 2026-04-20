@@ -1,0 +1,409 @@
+.aaddTourPage {
+  min-height: 100vh;
+  background: transparent;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.aaddTourCard {
+  width: 100%;
+  margin: 0 auto;
+  background: #f3f3f3;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.aaddTourHeader {
+  margin-bottom: 18px;
+}
+
+.aaddTourTitle {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.aaddTourSub {
+  margin: 6px 0 0 0;
+  color: #000;
+  font-size: 13px;
+}
+
+.aaddTourForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 10px;
+  padding: 11px 12px;
+  font-size: 14px;
+}
+
+.inputError {
+  border-color: rgba(255, 70, 70, 0.7);
+}
+
+.error {
+  font-size: 12px;
+  color: #ff3b3b;
+}
+
+.hint {
+  font-size: 12px;
+  color: #555;
+}
+
+.editorWrap {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+/* ReactQuill */
+.ql-toolbar.ql-snow {
+  border: none !important;
+  border-bottom: 1px solid #000 !important;
+  background: #fff;
+}
+
+.ql-container.ql-snow {
+  min-height: 180px;
+  background: #fff;
+  color: #000;
+}
+
+.ql-editor {
+  min-height: 180px;
+  color: #000;
+}
+
+/* ========================= */
+/* CALENDAR (FULL WIDTH GRID) */
+/* ========================= */
+
+.calendarWrap {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+/* DayPicker root */
+.calendarWrap .rdp {
+  width: 100%;
+  max-width: 100%;
+  color: #000;
+
+  /* day button size (NOT grid cell size) */
+  --day-btn: clamp(30px, 3.8vw, 42px);
+
+  /* selected circle EXACT 24px */
+  --sel-size: 34px;
+}
+
+/* Make month/table stretch full width */
+.calendarWrap .rdp-months,
+.calendarWrap .rdp-month,
+.calendarWrap .rdp-table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.calendarWrap .rdp-table {
+  table-layout: fixed;
+}
+
+/* 7 equal columns (THIS is full width calendar) */
+.calendarWrap .rdp-head_cell,
+.calendarWrap .rdp-cell {
+  width: 14.2857%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Month title */
+.calendarWrap .rdp-caption_label {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Navigation arrows */
+.calendarWrap .rdp-nav_button {
+  color: #000;
+}
+
+/* Weekday headers */
+.calendarWrap .rdp-head_cell {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Clickable day button: small and centered inside full-width cell */
+.calendarWrap .rdp-day_button {
+  width: var(--day-btn);
+  height: var(--day-btn);
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hover */
+.calendarWrap .rdp-day_button:hover {
+  background: #eee;
+}
+
+/* Selected day: keep button normal, draw a 24px circle inside it */
+/* Selected day */
+.calendarWrap .rdp-day_button[aria-selected="true"] {
+  background: #000 !important;
+  color: #fff !important;
+  border-radius: 50%;
+}
+
+/* ensure number stays above circle */
+.calendarWrap .rdp-day_button[aria-selected="true"] > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ========================= */
+/* END CALENDAR */
+/* ========================= */
+
+.selectedDates {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.selectedDatesTitle {
+  font-size: 12px;
+  color: #000;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  border: 1px solid #000;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+}
+
+.muted {
+  font-size: 12px;
+  color: #777;
+}
+
+.uploadRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.fileInput {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 8px;
+  width: 320px;
+  max-width: 100%;
+  color: #000;
+}
+
+.uploadNote {
+  font-size: 12px;
+  color: #000;
+}
+
+.imageGrid {
+  margin-top: 10px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.imageItem {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.thumb {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.removeBtn {
+  background: rgba(255, 70, 70, 0.1);
+  border: 1px solid rgba(255, 70, 70, 0.4);
+  color: #c70000;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.customCategoryRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.btn,
+.btnGhost {
+  border-radius: 12px;
+  padding: 11px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.btn {
+  background: #2b5cff;
+  color: white;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btnGhost {
+  background: transparent;
+  color: #000;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8px;
+}
+
+.msg {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(60, 255, 160, 0.1);
+  border: 1px solid rgba(60, 255, 160, 0.3);
+  color: #008f5a;
+  font-size: 13px;
+}
+
+/* react-select */
+.reactSelect__control {
+  background: #fff !important;
+  border: 1px solid #000 !important;
+  border-radius: 10px !important;
+  min-height: 44px !important;
+}
+
+.reactSelect__menu {
+  background: #fff !important;
+  border: 1px solid #000 !important;
+}
+
+.reactSelect__option {
+  color: #000 !important;
+}
+
+.reactSelect__multi-value {
+  background: #eee !important;
+}
+
+.selectError .reactSelect__control {
+  border-color: rgba(255, 70, 70, 0.7) !important;
+}
+
+/* cover UI */
+.imageItem {
+  position: relative;
+}
+
+.imageBtns {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.coverBtn {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.coverBtnOn {
+  border-color: #2e7d32;
+}
+
+.coverBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: 0.15s ease;
+  pointer-events: none;
+}
+
+.coverBadgeOn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.thumbCover {
+  outline: 3px solid rgba(46, 125, 50, 0.8);
+  border-radius: 10px;
+}

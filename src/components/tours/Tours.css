@@ -1,0 +1,6 @@
+.tours {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 70px 50px;
+}

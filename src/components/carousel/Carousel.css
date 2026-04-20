@@ -1,0 +1,106 @@
+.carousel-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.slide {
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.slide_1 {
+  background-position: center;
+}
+
+/* Clear all default arrow styles and show only custom chevrons */
+.carousel .control-arrow {
+  background: transparent !important;
+  border: none;
+  width: 60px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0.6; */
+  /* transition: opacity 0.3s ease; */
+  z-index: 2;
+  box-shadow: none;
+}
+
+.carousel .control-prev::before,
+.carousel .control-next::before {
+  display: none !important;
+  content: none !important;
+}
+
+.carousel .control-arrow:hover {
+  background-color: transparent !important;
+}
+
+/* Remove the default arrow content */
+.carousel .control-prev::before,
+.carousel .control-next::before {
+  content: none;
+  color: white !important;
+}
+
+/* Add custom chevrons */
+.carousel .control-prev::after {
+  content: "❮";
+  color: white;
+  font-size: 40px;
+}
+
+.carousel .control-next::after {
+  content: "❯";
+  color: white;
+  font-size: 40px;
+}
+
+.carousel .control-prev {
+  left: 15px;
+}
+
+.carousel .control-next {
+  right: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .slide {
+    background-position: bottom;
+  }
+
+  .carousel .control-prev::after,
+  .carousel .control-next::after {
+    font-size: 30px;
+  }
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  width: 100%;
+  height: calc(100vh - 75px);
+  position: relative;
+  z-index: 300;
+}

@@ -1,0 +1,14 @@
+.mobile_nav_item {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding: 5px 20px;
+}
+
+.mobile_nav_item:hover {
+  background: #f55d2f;
+}
+
+.burger {
+  margin-right: -5px;
+}

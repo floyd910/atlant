@@ -1,0 +1,80 @@
+.about_us {
+  color: black;
+}
+
+.about_us p,
+.about_us li {
+  font-size: 18px;
+}
+
+.team_header {
+  width: 100%;
+}
+
+.team_header h4,
+.team_header h5 {
+  margin-left: 5px;
+}
+
+.team_header h5 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.team_img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.member {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping by default */
+  margin-top: 30px;
+  gap: 0px 25px;
+}
+
+.member_img {
+  width: 200px; /* Fixed width for the image */
+  border-radius: 5px;
+}
+
+.member_info {
+  flex-grow: 1; /* Allow the info section to grow to fill available space */
+}
+
+.member_achievements {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+/* Additional styles for paragraphs and slogan */
+.about_us p {
+  margin-top: 15px;
+}
+
+.about_us_slogan {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.team_img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.about_us_content {
+  width: 65%;
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .member {
+    flex-wrap: wrap;
+  }
+
+  .member_img {
+    width: 100%;
+  }
+}

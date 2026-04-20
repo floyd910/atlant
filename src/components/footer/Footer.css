@@ -1,0 +1,38 @@
+footer {
+  background: #222;
+  padding: 30px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 100px;
+  padding: 30px 55px;
+}
+
+footer strong {
+  font-size: 20px;
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer_pages h2 {
+  font-size: 17px;
+  font-weight: normal;
+  color: white;
+}
+
+.footer_pages h5 {
+  font-size: 18px;
+  color: white;
+}
+
+.footer_pages {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+}

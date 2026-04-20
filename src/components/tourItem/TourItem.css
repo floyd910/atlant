@@ -1,0 +1,71 @@
+.tour_item {
+  margin-top: 15px;
+  position: relative;
+  height: 190px;
+  width: calc(100% / 4 - 50px * 3 / 4);
+}
+
+.tour_item .link {
+  width: 100%;
+  height: 100%;
+}
+
+.tour_item .link img {
+  width: 100%;
+  height: 100%;
+}
+
+.date {
+  font-size: 14px;
+  color: grey;
+  text-align: left;
+}
+
+.difficulty {
+  background: #f55d2f;
+  width: 52%;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  border-radius: 2px;
+}
+
+.difficulty p {
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+}
+
+@media only screen and (max-width: 1265px) {
+  .tour_item {
+    width: calc(100% / 3 - 50px * 2 / 3);
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .tour_item {
+    width: calc(100% / 2 - 50px / 2);
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 797px) {
+  .tour_item {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 592px) {
+  .tour_item {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .tour_item {
+    height: 170px;
+  }
+}

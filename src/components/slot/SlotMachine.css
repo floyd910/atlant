@@ -1,0 +1,17 @@
+/* Example basic styling */
+.slot-machine {
+  text-align: center;
+}
+
+.reel {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.symbol {
+  font-size: 2rem;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}

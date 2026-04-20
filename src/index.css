@@ -1,0 +1,56 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fffbf2;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+@import "./variables.css";
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  background-color: white;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.page {
+  padding: 35px 20px !important;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 17px;
+}
+
+.orange_title {
+  color: var(--orange);
+  font-size: 32px !important;
+}
+
+@media (max-width: 1215px) {
+  .brand_logo h1 {
+    display: none;
+  }
+}

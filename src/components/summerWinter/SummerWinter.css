@@ -1,0 +1,75 @@
+.summer_winter {
+  display: flex;
+  height: calc(100vh - 55px);
+  width: 100%;
+}
+
+.summer,
+.winter {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.summer {
+  color: white;
+  /* background: #fa435c; */
+  background-image: url("https://res.cloudinary.com/dgcq1oqfg/image/upload/v1704893295/DSCF9647_ljlauh.jpg?fbclid=IwAR19nqmUCj2F79maqg9XIovP8ruT3rtoAqMXx45mZATDU507LmHNwHdIOW0");
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1.5s ease all;
+}
+
+.summer_winter button:focus,
+.summer_winter button:focus-visible {
+  outline: none !important;
+}
+
+.winter {
+  /* background-color: beige; */
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url("https://eatthistours.com/wp-content/uploads/2024/09/1707374236924-1024x683-1.jpg");
+}
+
+.summer_winter h3 {
+  font-size: 38px;
+
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  /* margin-top: 50px; */
+  position: absolute;
+  top: 0;
+  z-index: 200;
+}
+
+.summer h3 {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-color: orange;
+  color: white;
+}
+
+/* .summer:hover,
+  .winter:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  } */
+
+.winter h3 {
+  background-color: rgb(122, 195, 243);
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  top: 0;
+}
