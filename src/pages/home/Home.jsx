@@ -6,9 +6,9 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 const Home = ({ loading, setLoading }) => {
   return (
-    <>
+    <div className="home page">
       <HeroBg loading={loading} setLoading={setLoading} />
-    </>
+    </div>
   );
 };
 

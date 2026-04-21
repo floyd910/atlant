@@ -10,7 +10,7 @@ const Footer = () => {
     <footer>
       <div>
         <h2>
-          <strong>Atlant Logistics</strong>
+          <strong style={{ fontSize: "30px" }}>Atlant Logistics</strong>
         </h2>
         <div style={{ color: "white" }}>
           <br /> ​Tel: +995 500 05 21 56

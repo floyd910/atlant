@@ -11,9 +11,6 @@ const HeroBg = ({ loading, setLoading }) => {
   const slides = useMemo(
     () => [
       cld(
-        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790045/1_ATLANT-LOGISTICS_tknb9y.png",
-      ),
-      cld(
         "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790063/2_About-ATLANT-LOGISTICS_gjywky.png",
       ),
       cld(

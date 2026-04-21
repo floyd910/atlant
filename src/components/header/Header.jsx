@@ -7,7 +7,7 @@ const Header = () => {
       <div className="brand_logo">
         <Link to="/" className="link">
           <img
-            src="https://res.cloudinary.com/dvngcbhqt/image/upload/c_crop,w_800,h_550,y_200/v1776791790/c852d45d-2caf-4820-895b-2786a890c0d7_vahkoq.png"
+            src="https://res.cloudinary.com/dvngcbhqt/image/upload/v1776800353/WhatsApp_Image_2026-04-21_at_11.48.27-removebg-preview_auedbz.png"
             alt="Atlant Logistics"
             className="logo-img"
           />
