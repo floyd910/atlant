@@ -17,7 +17,7 @@ body {
 
 .page {
   margin: auto;
-  padding: 30px 55px;
+  padding: 30px 30px;
   position: relative;
   min-height: calc(100vh - 250px);
 }
@@ -45,7 +45,7 @@ li {
   padding: 0;
 }
 
-body{
+body {
   background: #f3f3f3;
 }
 
@@ -77,16 +77,16 @@ button:focus {
   font-size: 24px;
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
-  gaP: 20px;
+  gap: 20px;
 }
 
-.construction{
+.construction {
   padding: 55px;
 }
 
-.construction h1{
+.construction h1 {
   font-family: "DM Serif Display", serif;
 }

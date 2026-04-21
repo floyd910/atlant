@@ -11,16 +11,34 @@ const HeroBg = ({ loading, setLoading }) => {
   const slides = useMemo(
     () => [
       cld(
-        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776704400/Gemini_Generated_Image_dywat6dywat6dywa_2_d01wll.png",
+        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790045/1_ATLANT-LOGISTICS_tknb9y.png",
       ),
       cld(
-        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776704400/Gemini_Generated_Image_dywat6dywat6dywa_1_p1wusy.png",
+        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790063/2_About-ATLANT-LOGISTICS_gjywky.png",
       ),
       cld(
-        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776704390/Gemini_Generated_Image_dywat6dywat6dywa_3_hq4ahu.png",
+        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790060/3_Our-Comprehensive-Services_cxlujx.png",
       ),
       cld(
-        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776704384/Gemini_Generated_Image_dywat6dywat6dywa_4_ogrir6.png",
+        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790043/4_Road-Transport-Solutions_bvtnto.png",
+      ),
+      cld(
+        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790055/5_Marine-Transport-Excellence_a2eo15.png",
+      ),
+      cld(
+        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790051/6_Cargo-Management-and-Tracking_tvg1oq.png",
+      ),
+      cld(
+        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790062/7_Geographic-Coverage_klmxzd.png",
+      ),
+      cld(
+        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790051/8_Why-Choose-ATLANT-LOGISTICS_iocder.png",
+      ),
+      cld(
+        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790060/9_Comprehensive-Cargo-Insurance_ongmn0.png",
+      ),
+      cld(
+        "https://res.cloudinary.com/dvngcbhqt/image/upload/v1776790066/10_Ready-to-Streamline-Your-Logistics_hc9nsh.png",
       ),
     ],
     [],
@@ -63,7 +81,7 @@ const HeroBg = ({ loading, setLoading }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000); // change speed here
+    }, 9000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -78,6 +96,17 @@ const HeroBg = ({ loading, setLoading }) => {
           style={{ backgroundImage: `url(${slide})` }}
         />
       ))}
+
+      {/* 🔥 DOT SWITCHERS */}
+      <div className="hero-dots">
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={`hero-dot ${index === current ? "active" : ""}`}
+            onClick={() => setCurrent(index)}
+          />
+        ))}
+      </div>
 
       {loading && (
         <div className="overlay">
